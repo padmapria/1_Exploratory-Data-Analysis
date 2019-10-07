@@ -1,16 +1,38 @@
-# 1_Exploratory-Data-Analysis
-Machine Learning Assign1
+# Mobile Payment Fraud Detection using various ML classification Algorithm
+This is a group project.
 
-Haberman's survival dataset
-The dataset contains cases from a study that was conducted between 1958 and 1970 at the University of Chicago's Billings Hospital on the survival of patients who had undergone surgery for breast cancer.
+We are implementing Artificial Intelligence and Machine learning algorithm based fraud detection tools to predict Mobile payment fraud in this project. For this, we are using the synthetic Mobile Payments Dataset found in the Kaggle web site 
+The input of the data to this algorithm is a mobile payment transaction and the output will be the transaction with the field isFraud set to ‘0’ (False) or ‘1’ (True) indicating whether the transaction is fraud or not fraud.
 
-Dataset: Haberman Dataset: [https://www.kaggle.com/gilsousa/habermans-survival-data-set]
+The data from this dataset is cleaned, transformed and perform SMOTE analysis / Random undersampling to handle imbalance. The upsampled or the undersampled data are used to train and validate the algorithms to predict if the transaction is fraud. Various ML technology Classification algorithms are used for the binary classification, to classify the Mobile payment transaction as fraud or non-fraud. 
 
-There are 4 attribute in this dataset out of which 3 are features and 1 class attribute.
-There are 306 instances of data.
-Number of nodes
-Age
-Year
-Survival Status
-Objective:To classify a data as belonging to one of the 2 classes(survived more than 5 yrs or not) given the 3 features.
-Which is the most important feature to identify the survival status?
+We are using the below mentioned classification algorithms for this project. we are comparing the performance of the algorithms by predicting the fraud transactions.
+•	Logistic regression
+•	Random Forest Classifier
+•	Gradient Boosting Classifier
+•	AdaBoost Classifier
+•	Support Vector Machines
+
+The accuracy of the algorithms is evaluated using  following metrics such as Cross validation, Classification Accuracy, Confusion Matrix, Sensitivity, Specificity, Area under Curve (AUC), F1 Score
+
+Data Collection and Sources
+
+The dataset can be found and downloaded from the link 
+https://www.kaggle.com/ntnu-testimon/paysim1
+This dataset has around 6.5 Million records out of which around 8500 are marked as fraud. 
+
+The dataset has the following fields.
+
+step – The step in the full transaction.
+type – type of transaction. The dataset has 5 types of transactions.
+amount – transaction amount
+nameOrig – name of the person/organization who initiated the transaction. This is obfusticated.
+oldbalanceOrg – Starting balance of the originator account.
+newbalanceOrig – Ending balance of the originator after the transaction amount is posted.
+nameDest – Name of the person/organization of the destination account.
+oldbalanceDest – Starting balance of the destination account before the transaction amount is posted to the account
+newbalanceDest – Ending balance of the destination account after posting the transaction amount.
+isFraud –Boolean flag indicating if the transaction is fraud.
+isFlaggedFraud – The description of this field is not clear. There are only 16 transactions out of 6 million that has a value of 1 in this field and rest are 0. 
+
+
