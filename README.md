@@ -13,13 +13,13 @@ We are using the below mentioned classification algorithms for this project. we 
 •	AdaBoost Classifier
 •	Support Vector Machines
 
-The accuracy of the algorithms is evaluated using  following metrics such as Cross validation, Classification Accuracy, Confusion Matrix, Sensitivity, Specificity, Area under Curve (AUC), F1 Score
+The accuracy of the algorithms is evaluated using  following metrics such as Cross validation, Classification Accuracy, Confusion Matrix, Sensitivity, Specificity, Area under Curve (AUC)
 
 Data Collection and Sources
 
 The dataset can be found and downloaded from the link 
 https://www.kaggle.com/ntnu-testimon/paysim1
-This dataset has around 6.5 Million records out of which around 8500 are marked as fraud. 
+This dataset has around 6.5 Million records out of which around 8500 are marked as fraud. The dataset is heavily imbalanced, So we have done upsampling of minority class in most of the algorithms, and downsampling of majority in SVM algorithm
 
 The dataset has the following fields.
 
