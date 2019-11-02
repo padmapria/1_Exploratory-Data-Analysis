@@ -39,5 +39,3 @@ oldbalanceDest – Starting balance of the destination account before the transa
 newbalanceDest – Ending balance of the destination account after posting the transaction amount.
 isFraud –Boolean flag indicating if the transaction is fraud.
 isFlaggedFraud – The description of this field is not clear. There are only 16 transactions out of 6 million that has a value of 1 in this field and rest are 0. 
-
-
