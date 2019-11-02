@@ -8,10 +8,15 @@ The data from this dataset is cleaned, transformed and perform SMOTE analysis / 
 
 We are using the below mentioned classification algorithms for this project. we are comparing the performance of the algorithms by predicting the fraud transactions.
 •	Logistic regression
+
 •	Random Forest Classifier
+
 •	Gradient Boosting Classifier
+
 •	AdaBoost Classifier
+
 •	Support Vector Machines
+
 
 The accuracy of the algorithms is evaluated using  following metrics such as Cross validation, Classification Accuracy, Confusion Matrix, Sensitivity, Specificity, Area under Curve (AUC)
 
